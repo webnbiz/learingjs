@@ -1,4 +1,5 @@
 let ourForm = document.getElementById("ourForm")
-ourForm.addEventListener("click", ()=> {
+ourForm.addEventListener("submit", (e)=> {
+  e.preventDefault()
   alert("thanks for clicking")
 })
