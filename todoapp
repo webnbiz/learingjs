@@ -1,12 +1,12 @@
 <h1>To-Do App</h1>
 <form id="ourForm">
-  <input type="text" autocomplete="off">
+  <input id="ourField" type="text" autocomplete="off">
   <button>Create Item</button>
 </form>
 
 <h3>Need to do</h3>
 
-<ul>
+<ul id="ourList">
   <li>Buy carrots <button>Delete</button></li>
   
   <li>Buy tomato <button>Delete</button></li>
