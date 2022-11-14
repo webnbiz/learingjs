@@ -8,5 +8,5 @@ ourForm.addEventListener("submit", (e)=> {
 })
 
 function createItem(x){
-  ourList.insertAdjacentHtml("beforeend", x )
+  ourList.insertAdjacentHTML("beforeend", x )
 }
