@@ -7,6 +7,9 @@ ourForm.addEventListener("submit", (e)=> {
   createItem(ourField.value)
 })
 
+
+
 function createItem(x){
-  ourList.insertAdjacentHTML("beforeend", x )
+  let ourHTML = `<li>${x} <button>Delete</button></li>`
+  ourList.insertAdjacentHTML("beforeend", ourHTML )
 }
