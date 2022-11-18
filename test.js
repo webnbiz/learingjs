@@ -1,6 +1,17 @@
-let http = require("http")
+let express = require("expess")
+let ourApp = express()
+ourApp.get('/', function(req, res){
 
-let ourApp = http.createServer(function(req, res){
-res.end("Hello and welcome to our website")
+ res.send(`
+ <form>
+//  <p>What color?</p>
+ <input name="skyColor" autocomplete="off"></input>
+ <button></button>
+ </form>
+ 
+ `)
+
 })
+
 ourApp.listen(3000)
+
