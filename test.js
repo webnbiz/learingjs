@@ -1,10 +1,6 @@
-let strawberryCount = 3
+let http = require("http")
 
-if (strawberryCount > 10){
-
-console.log("you have enough")
-
-}
-else {
-    console.log("you have not enough")
-}
+let ourApp = http.createServer(function(req, res){
+res.end("Hello and welcome to our website")
+})
+ourApp.listen(3000)
